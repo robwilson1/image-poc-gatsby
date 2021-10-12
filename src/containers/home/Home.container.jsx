@@ -3,11 +3,6 @@ import { StaticImage } from "gatsby-plugin-image";
 
 import * as styles from "./Home.module.css";
 
-const heroCar = "../../images/hero.jpg";
-const car1 = "../../images/car1.jpg";
-const car2 = "../../images/car2.jpg";
-const car3 = "../../images/car3.jpg";
-
 const HomeContainer = () => (
   <main className={styles.main}>
     <title>Gatsby | Optimised Images</title>
@@ -16,7 +11,7 @@ const HomeContainer = () => (
 
     <section className={styles.heroImage}>
       <StaticImage
-        src={heroCar}
+        src={'../../images/hero.jpg'}
         alt="Hero Car"
         placeholder="blurred"
         layout="constrained"
@@ -30,7 +25,7 @@ const HomeContainer = () => (
 
     <section className={styles.otherImages}>
         <StaticImage
-          src={car1}
+          src="../../images/car1.jpg"
           alt="Car 1"
           placeholder="blurred"
           layout="constrained"
@@ -41,7 +36,7 @@ const HomeContainer = () => (
           quality={50}
         />
         <StaticImage
-          src={car2}
+          src="../../images/car2.jpg"
           alt="Car 2"
           placeholder="blurred"
           layout="constrained"
@@ -52,7 +47,7 @@ const HomeContainer = () => (
           quality={50}
         />
         <StaticImage
-          src={car3}
+          src="../../images/car3.jpg"
           alt="Car 3"
           placeholder="blurred"
           layout="constrained"
